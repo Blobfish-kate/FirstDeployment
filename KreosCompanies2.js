@@ -6,9 +6,8 @@ const cors = require("cors")
 const rp = require('request-promise');
 const url = 'http://www.kreoscapital.com/portfolio/';
 
-app.use(bodyParser.urlencoded({extended: true}))
-
 app.use(cors())
+app.use(bodyParser.urlencoded({extended: true}))
 
 let INVESTMENTS;
 
